@@ -4,22 +4,57 @@
 <title>Dexin's Commissions</title>
 <style>
 body {
-    background-color: #0D1117;
+    background-color: #fff;
+    margin: 0;
 }
 #centerz {
     width: 80%;
     align: center;
     background: none;
     border: solid 0px;
-    color: #56C0FF;
+    color: #fff;
+}
+    
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0D1117;
+  color: #fff;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #555;}
+
+ul.topnav li a.active {background-color: #56C0FF;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 </style>
 </head>
 <body>
 <div align="center">
-    <div id="centerz">
-        HOME  |  COMMISSIONS  |  FAQs  |  T.O.S.  |  LINKS
-    </div>
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Commissions</a></li>
+  <li><a href="#contact">FAQs</a></li>
+  <li><a href="#about">T.O.S.</a></li>
+  <li><a href="#about">Links</a></li>
+</ul>
 </div>
 </body>
 </html>
